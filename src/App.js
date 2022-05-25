@@ -18,7 +18,7 @@ function App() {
       <input value={name} />
       <hr />
       <hr />
-      <h1>{count}</h1>
+      <h2>Initial Value : {count}</h2>
       <span>
         <button
           onClick={() => {
@@ -27,6 +27,15 @@ function App() {
         >
           Increment
         </button>
+        <h3> New Value : {count}</h3>
+        <button
+          onClick={() => {
+            setCount(count - 1);
+          }}
+        >
+          Decrement
+        </button>
+        <h3> New Value : {count}</h3>
       </span>
     </div>
   );
